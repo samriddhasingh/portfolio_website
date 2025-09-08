@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,6 +84,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -141,18 +143,18 @@
             background: white;
         }
 
-        .option input[type="radio"]:checked + label {
+        .option input[type="radio"]:checked+label {
             background: #e3f2fd;
             border-color: #4facfe;
             color: #1976d2;
         }
 
-        .option input[type="radio"]:checked + label::before {
+        .option input[type="radio"]:checked+label::before {
             background: #4facfe;
             border-color: #4facfe;
         }
 
-        .option input[type="radio"]:checked + label::after {
+        .option input[type="radio"]:checked+label::after {
             content: '';
             position: absolute;
             left: 21px;
@@ -346,6 +348,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -432,13 +435,1057 @@
                 options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "Jet momentum analysis"],
                 correct: 2
             },
-            {
+            /* {
                 question: "What shape is shown in the image below?",
                 image: "quesiton1.jpg",
                 options: ["Square", "Circle", "Triangle", "Rectangle"],
                 correct: 2
+            }*/
+            {
+                question: "In which situation can you not use the simplified Bernoulli equation to derive the pressure gradient?",
+                options: [
+                    "Peak instantaneous gradient across a nonobstructed mitral valve",
+                    "Peak gradient across a severely stenotic aortic valve",
+                    "Mean gradient across a severely stenotic aortic valve",
+                    "Mean gradient across a stenotic tricuspid valve"
+                ],
+                correct: 0
+            },
+            {
+                question: "Which of the following resolutions change with increasing field depth?",
+                options: ["Axial resolution", "Lateral resolution"],
+                correct: 1
+            },
+            {
+                question: "With a fixed-focus transducer with crystal diameter 20 mm and wavelength 2.5 mm, what is the depth of the focus?",
+                options: ["40 m", "30 mm", "40 mm", "4 m"],
+                correct: 2
+            },
+            {
+                question: "A sonographer adjusts the ultrasound machine to double the depth of view from 5 to 10 cm. If sector angle is reduced to keep the frame rate constant, which of the following has changed?",
+                options: ["Axial resolution", "Temporal resolution", "Lateral resolution", "The wavelength"],
+                correct: 2
+            },
+            {
+                question: "Which of the following properties of a reflected wave is most important in the genesis of a two-dimensional image?",
+                options: ["Amplitude", "Period", "Pulse repetition period", "Pulse duration"],
+                correct: 0
+            },
+            {
+                question: "Increasing depth will change all of the following except:",
+                options: ["Pulse duration", "Pulse repetition period", "Pulse repetition frequency", "Duty factor"],
+                correct: 0
+            },
+            {
+                question: "The two-dimensional images are produced because of this phenomenon when the ultrasound reaches the tissue:",
+                options: ["Refraction", "Backscatter", "Specular reflection", "Transmission"],
+                correct: 1
+            },
+            {
+                question: "Attenuation of ultrasound as it travels through tissue is higher at:",
+                options: [
+                    "Greater depth",
+                    "Lower transducer frequency",
+                    "Blood rather than soft tissue like muscle",
+                    "Bone more than air"
+                ],
+                correct: 0
+            },
+            {
+                question: "The half-intensity depth is a measure of:",
+                options: [
+                    "Ultrasound attenuation in tissue",
+                    "Half the wall thickness in mm",
+                    "Coating on the surface of the transducer",
+                    "Half the ultrasound beam width"
+                ],
+                correct: 0
+            },
+            {
+                question: "What is the highest pulse repetition frequency (PRF) of a 3 MHz pulsed wave transducer imaging at a depth of 7 cm?",
+                options: ["21 000 Hz", "2 333 Hz", "11 000 Hz", "2.1 million Hz"],
+                correct: 2
+            },
+            {
+                question: "Examples of continuous wave imaging include:",
+                options: [
+                    "Two-dimensional image",
+                    "Volumetric scanner-acquired LV image",
+                    "Color flow imaging",
+                    "Nonimaging Doppler probe (Pedoff)"
+                ],
+                correct: 3
+            },
+            {
+                question: "Which of the following manipulations will increase the frame rate?",
+                options: ["Increase depth", "Increase transmit frequency", "Decrease sector angle", "Increase transmit power"],
+                correct: 2
+            },
+            {
+                question: "The lateral resolution increases with:",
+                options: ["Decreasing transducer diameter", "Reducing power", "Beam focusing", "Reducing transmit frequency"],
+                correct: 2
+            },
+            {
+                question: "Axial resolution can be improved by which of the following manipulations?",
+                options: ["Reduce beam diameter", "Beam focusing", "Reduce gain", "Increase transmit frequency"],
+                correct: 3
+            },
+            {
+                question: "Type of sound used in medical imaging is:",
+                options: ["Ultrasound", "Infrasound", "Audible sound", "Inaudible Sound"],
+                correct: 0
+            },
+            {
+                question: "Doppler shift is typically in:",
+                options: ["Ultrasound range", "Infrasound range", "Audible range"],
+                correct: 2
+            },
+            {
+                question: "Duty factor refers to:",
+                options: [
+                    "Power the transducer can generate",
+                    "Range of frequencies the transducer is capable of",
+                    "Physical properties of the damping material",
+                    "Fraction of time the transducer is emitting ultrasound"
+                ],
+                correct: 3
+            },
+            {
+                question: "Duty factor increases with:",
+                options: [
+                    "Increasing gain",
+                    "Increasing pulse duration",
+                    "Decreasing pulse repetition frequency (PRF)",
+                    "Decreasing dynamic range"
+                ],
+                correct: 1
+            },
+            {
+                question: "Which of the following will increase the PRF?",
+                options: ["Reducing depth", "Decreasing transducer frequency", "Reducing sector angle", "Reducing filter"],
+                correct: 0
+            },
+            {
+                question: "Persistence will have this effect on the image:",
+                options: [
+                    "Smoothening of a two-dimensional image",
+                    "Better resolution",
+                    "Eliminating artifacts",
+                    "Spuriously reducing wall thickness"
+                ],
+                correct: 0
+            },
+            {
+                question: "Aliasing occurs in this type of imaging:",
+                options: ["Pulsed wave Doppler", "Continuous wave Doppler", "None of the above", "All of the above"],
+                correct: 0
+            },
+            {
+                question: "The Nyquist limit at a PRF of 1000 Hz is:",
+                options: ["500 Hz", "1000 Hz", "2000 Hz", "Cannot calculate"],
+                correct: 0
+            },
+            {
+                question: "The Nyquist limit can be increased by:",
+                options: ["Increasing the PRF", "Reducing the PRF", "Neither"],
+                correct: 0
+            },
+            {
+                question: "The Nyquist limit can also be increased by:",
+                options: [
+                    "Increasing transducer frequency",
+                    "Reducing transducer frequency",
+                    "Reducing filter",
+                    "None of the above"
+                ],
+                correct: 1
+            },
+            {
+                question: "Aliasing can be reduced by:",
+                options: [
+                    "Decreasing the depth",
+                    "Increasing the PRF",
+                    "Reducing the transducer frequency",
+                    "Changing to continuous wave Doppler",
+                    "All of the above"
+                ],
+                correct: 4
+            },
+            {
+                question: "What is the purpose of the depth or time gain compensation process adjusted by the echocardiographer and performed in an ultrasound’s receiver?",
+                options: [
+                    "Corrects for depth attenuation and makes the image uniformly bright",
+                    "Eliminates image artifacts",
+                    "Eliminates aliasing",
+                    "None of the above"
+                ],
+                correct: 0
+            },
+            {
+                question: "Which of the following increases the Nyquist limit?",
+                options: [
+                    "Increasing the depth",
+                    "Reducing the sample volume depth",
+                    "Increasing the transducer frequency",
+                    "None of the above"
+                ],
+                correct: 1
+            },
+            {
+                question: "The maximum Doppler shift that can be displayed without aliasing with a PRF of 10 kHz is:",
+                options: ["5 kHz", "10 kHz", "Depends on depth", "Cannot be determined"],
+                correct: 0
+            },
+            {
+                question: "The PRF is influenced by:",
+                options: ["Transducer frequency", "Depth of imaging", "Both", "Neither"],
+                correct: 1
+            },
+            {
+                question: "Two identical structures appear on an ultrasound scan. One is real and the other is an artifact, the artifact being deeper than the real structure. What is this artifact called?",
+                options: ["Shadowing", "Ghosting", "Speed error artifact", "Mirror image"],
+                correct: 3
+            },
+            {
+                question: "What is influenced by the medium through which sound travels?",
+                options: ["Wavelength alone", "Speed alone", "Both wavelength and speed", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "Image quality on an ultrasound scan is dark throughout? What is the first best step to take?",
+                options: [
+                    "Increase output power",
+                    "Increase receiver gain",
+                    "Change to a higher frequency transducer",
+                    "Decrease receiver gain"
+                ],
+                correct: 0
+            },
+            {
+                question: "All of the following will improve temporal resolution except:",
+                options: ["Decreasing line density", "Decreasing sector angle", "Increasing frame rate", "Multifocusing"],
+                correct: 3
+            },
+            {
+                question: "Sound travels faster in a medium with which of the following characteristics?",
+                options: [
+                    "High density, low stiffness",
+                    "Low density, high stiffness",
+                    "High density, high stiffness",
+                    "Low density, low stiffness"
+                ],
+                correct: 1
+            },
+            {
+                question: "Which of the following is associated with continuous wave Doppler compared to pulsed wave Doppler?",
+                options: ["Aliasing", "Range specificity", "Ability to record higher velocities", "All of the above"],
+                correct: 2
+            },
+            {
+                question: "As transducer frequency increases, backscatter strength:",
+                options: ["Decreases", "Increases", "Does not change", "Refracts"],
+                correct: 1
+            },
+            {
+                question: "If an echo arrives 39 μs after a pulse has been emitted, at what depth should the reflecting object be on the scan line?",
+                options: ["3 cm", "6 cm", "1 cm", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "The Doppler shift produced by an object moving at a speed of 1 m/s toward the transducer emitting ultrasound at 2 MHz would be:",
+                options: ["2.6 kHz", "1.3 kHz", "1 MHz", "200 Hz"],
+                correct: 0
+            },
+            {
+                question: "In the above example, the reflected ultrasound will have a frequency of:",
+                options: ["2 002 600 Hz", "1 998 700 Hz", "1 000 000 Hz", "2 MHz"],
+                correct: 0
+            },
+            {
+                question: "Reflected ultrasound from an object moving away from the sound source will have a frequency:",
+                options: ["Higher than original sound", "Lower than the original sound", "Same as the original sound", "Variable, depending on source of sound and velocity of the moving object"],
+                correct: 1
+            },
+            {
+                question: "Reflected ultrasound from an object moving perpendicular to the sound source will have a frequency:",
+                options: ["Higher than original sound", "Lower than the original sound", "Same as the original sound", "Variable, depending on source of sound and velocity of the moving object"],
+                correct: 2
+            },
+            {
+                question: "Doppler shift frequency is independent of:",
+                options: ["Operating frequency", "Doppler angle", "Propagation speed", "Amplitude"],
+                correct: 3
+            },
+            {
+                question: "On a continuous wave Doppler display, amplitude is represented by:",
+                options: ["Brightness of the signal", "Vertical extent of the signal", "Width of the signal", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Doppler signals from the myocardium, compared with those from the blood pool, display:",
+                options: ["Lower velocity", "Greater amplitude", "Both of the above", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "Doing which of the following modifications to the Doppler processing will allow myocardial velocities to be recorded selectively compared with blood pool velocities?",
+                options: ["A band pass filter that allows low velocities", "A band pass filter that allows high amplitude signals", "Both", "Neither"],
+                correct: 2
+            },
+            {
+                question: "If the propagation speed is 1.6 mm/μs and the pulse round trip time is 5 μs, the distance to the reflector is:",
+                options: ["8 mm", "4 mm", "10 mm", "Cannot be determined"],
+                correct: 1
+            },
+            {
+                question: "How long after a pulse is sent out by a transducer does an echo from an object at a depth of 5 cm return?",
+                options: ["13 μs", "65 μs", "5 μs", "Cannot be determined"],
+                correct: 1
+            },
+            {
+                question: "For soft tissues, the attenuation coefficient at 3 MHz is:",
+                options: ["1 dB/cm", "6 dB/cm", "1.5 dB/cm", "3 dB/cm"],
+                correct: 2
+            },
+            {
+                question: "If the density of a medium is 1000 kg/m3 and the propagation speed is 1540 m/s, the impedance is:",
+                options: ["1 540 000 rayls", "770 000 rayls", "3 080 000 rayls", "Cannot be determined"],
+                correct: 0
+            },
+            {
+                question: "If the propagation speed through medium 2 is greater than the propagation speed through medium 1 the transmission angle will be _______ the incidence angle.",
+                options: ["Lesser", "Greater", "Equal to", "Cannot be determined"],
+                correct: 1
+            },
+            {
+                question: "If amplitude is doubled, intensity is:",
+                options: ["Halved", "Quadrupled", "Remains the same", "Tripled"],
+                correct: 1
+            },
+            {
+                question: "If both power and area are doubled, intensity is:",
+                options: ["Doubled", "Unchanged", "Halved", "Tripled"],
+                correct: 1
+            },
+            {
+                question: "Flow resistance in a vessel depends on:",
+                options: ["Vessel length", "Vessel radius", "Blood viscosity", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "Flow resistance decreases with an increase in:",
+                options: ["Vessel length", "Vessel radius", "Blood viscosity", "None of the above"],
+                correct: 1
+            },
+            {
+                question: "Flow resistance depends most strongly on:",
+                options: ["Vessel length", "Vessel radius", "Blood viscosity", "All of the above"],
+                correct: 1
+            },
+            {
+                question: "Volumetric flow rate decreases with an increase in:",
+                options: ["Pressure difference", "Vessel radius", "Vessel length", "Blood viscosity", "Vessel length and blood viscosity"],
+                correct: 4
+            },
+            {
+                question: "Which of the following on a color Doppler display is represented in real time?",
+                options: ["Gray-scale anatomy", "Flow direction", "Doppler spectrum", "Gray-scale anatomy and flow direction", "All of the above"],
+                correct: 3
+            },
+            {
+                question: "Approximately how many pulses are required to obtain one line of color Doppler information?",
+                options: ["1", "100", "10", "10 000"],
+                correct: 2
+            },
+            {
+                question: "Multiple focuses are not used in color Doppler imaging because:",
+                options: ["It would not improve the image", "Doppler transducers cannot focus", "Frame rates would be too low", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "Widening the color box on the display will _________ the frame rate.",
+                options: ["Increase", "No change", "Decrease", "Cannot be determined"],
+                correct: 2
+            },
+            {
+                question: "The simplified Bernoulli equation is inapplicable under the following circumstances:",
+                options: ["Serial stenotic lesions", "Long, tubular lesions", "Both", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "The Bernoulli equation is an example of:",
+                options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "None of the above"],
+                correct: 1
+            },
+            {
+                question: "The continuity equation is an example of:",
+                options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Effective regurgitant orifice area by the proximal isovelocity surface area (PISA) method is an example of:",
+                options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Doppler calculation of aortic valve area is an example of:",
+                options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Calculation of right ventricular systolic pressure from the tricuspid regurgitation velocity signal is an example of:",
+                options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "None of the above"],
+                correct: 1
+            },
+            {
+                question: "Color flow jet area of mitral regurgitation depends upon:",
+                options: ["Amount of regurgitation alone", "Driving pressure and the regurgitant volume", "Presence of aortic regurgitation", "Degree of mitral stenosis"],
+                correct: 1
+            },
+            {
+                question: "Factors influencing mitral regurgitation jet volume also include:",
+                options: ["Proximity of left atrial wall", "Heart rate", "Gain setting", "Filter setting", "Left atrial size", "All of the above"],
+                correct: 5
+            },
+            {
+                question: "Amount of mitral regurgitation depends upon:",
+                options: ["Regurgitant orifice size", "Driving pressure", "Duration of systole", "All of the above"],
+                correct: 3
+            },
+            {
+                question: "Hemodynamic impact of a given volumetric severity of mitral regurgitation (MR) is increased by:",
+                options: ["Nondilated left atrium", "Left ventricular hypertrophy", "Presence of concomitant aortic regurgitation", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "Which feature is consistent with severe mitral regurgitation:",
+                options: ["Jet size to left atrial area ratio of 0.5", "The PISA radius of 1.2 cm at an aliasing velocity of 50 cm/s", "Effective regurgitant orifice area of 0.7 cm2", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "When using a fixed-focus probe this parameter cannot be changed by the sonographer:",
+                options: ["Pulse repetition period", "Pulse repetition frequency", "Amplitude", "Wavelength"],
+                correct: 3
+            },
+            {
+                question: "The following signal was obtained from the apical view in a 45-year-old man with a systolic murmur. What is the most likely origin of this signal?",
+                image: "q78.png",
+                options: ["Mitral valve prolapse with late systolic MR", "Rheumatic MR", "Hyperdynamic left ventricle with cavity obliteration", "Subaortic membrane"],
+                correct: 2
+            },
+            {
+                question: "Continuous wave signal from the apical view. The image is suggestive of:",
+                options: ["Moderate aortic stenosis", "Severe aortic stenosis", "Mitral regurgitation", "Prosthetic aortic valve obstruction"],
+                image: "q79.png",
+                correct: 3
+            },
+            {
+                question: "The signal obtained from the right parasternal view is suggestive of:",
+                image: "q80.png",
+                options: ["Severe MR", "Severe aortic stenosis", "Severe aortic regurgitation", "Severe pulmonary stenosis"],
+                correct: 1
+            },
+            {
+                question: "The Doppler signal is consistent with:",
+                image: "q81.png",
+                options: ["Severe aortic regurgitation and moderate aortic stenosis", "Severe mitral stenosis", "Acute severe mitral regurgitation", "Ventricular septal defect"],
+                correct: 2
+            },
+            {
+                question: "Pulse duration is affected by:",
+                options: ["Source of ultrasound", "Transmission medium", "Both", "Neither"],
+                correct: 0
+            },
+            {
+                question: "The pulse repetition frequency (PRF) is affected by:",
+                options: ["Source of ultrasound", "Transmission medium", "Both", "Neither"],
+                correct: 0
+            },
+            {
+                question: "What happens to the PRF when imaging depth is increased?",
+                options: ["Increases", "Decreases", "Does not change", "Effect is variable"],
+                correct: 1
+            },
+            {
+                question: "By increasing the PRF, the axial resolution:",
+                options: ["Increases", "Decreases", "Does not change"],
+                correct: 2
+            },
+            {
+                question: "Imaging at depth affects:",
+                options: ["Axial resolution", "Lateral resolution", "Neither", "Both"],
+                correct: 1
+            },
+            {
+                question: "Reducing the transducer footprint will affect:",
+                options: ["Lateral resolution", "Temporal resolution", "Axial resolution", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Increasing the transmit power will:",
+                options: ["Decrease sensitivity", "Increase lateral resolution", "Increase penetration", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "Acoustic impedance equals (rayls):",
+                options: ["Density in kg/m3 × speed of sound in m/s", "Density in kg/m3 × transducer frequency in MHz", "Depth in meters × transducer frequency in MHz", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Reflection of sound at an interface is affected by:",
+                options: ["Specific acoustic impedance", "Transducer frequency", "Depth", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "The most common cause of coronary sinus dilatation is:",
+                options: ["Heart failure", "Persistent left superior vena cava", "Atrial septal defect", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "The calculated aortic valve area (AVA) is:",
+                options: ["0.4 cm2", "0.6 cm2", "0.8 cm2", "1 cm2"],
+                correct: 1
+            },
+            {
+                question: "The continuity equation is an example of:",
+                options: ["Law of conservation of mass", "Law of conservation of energy", "Law of conservation of momentum", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "The most practical value for the development of perfluorocarbon bubbles was to improve:",
+                options: ["Contrast on the right side", "Stable passage through the transpulmonary bed to improve contrast on the left side", "Improve contrast visualization in the hepatic bed", "None of the above"],
+                correct: 1
+            },
+            {
+                question: "In a patient with mixed aortic valve disease, the AVA by the Gorlin equation using Fick cardiac output is likely to be:",
+                options: ["Less than by the continuity equation", "More than by the continuity equation", "The same by both methods"],
+                correct: 0
+            },
+            {
+                question: "In a patient with mixed aortic valve disease, the AVA by the Gorlin equation using angiographic cardiac output is likely to be:",
+                options: ["Less than by the continuity equation", "More than by the continuity equation", "The same by both methods"],
+                correct: 2
+            },
+            {
+                question: "The peak regurgitant flow rate equals:",
+                options: ["251 cc/s", "251 cc/min", "125 cc/min", "125 cc/s"],
+                correct: 0
+            },
+            {
+                question: "The effective mitral regurgitant orifice area would be:",
+                options: ["0.7 cm2", "0.5 cm2", "1 cm2", "Cannot be calculated"],
+                correct: 1
+            },
+            {
+                question: "This effective regurgitant orifice (ERO) area of 0.5 cm2 represents:",
+                options: ["Mild mitral regurgitation (MR)", "Moderate MR", "Severe MR", "Severity cannot be detected"],
+                correct: 2
+            },
+            {
+                question: "If the patient in question 99 had a blood pressure of 220/90 mmHg with similar proximal isovelocity surface area (PISA) measurements, the ERO area would:",
+                options: ["Remain unchanged", "Be more", "Be less", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "An intraoperative transesophageal echocardiogram (TEE) revealed mitral regurgitation with the following measurements: regurgitant jet area 4 cm2, PISA radius 0.8 cm at a Nyquist limit of 50 cm/s at a heart rate of 82 beats/min, and arterial blood pressure 80/40 mmHg. This represents:",
+                options: ["Mild mitral regurgitation (MR)", "Moderate MR", "Severe MR"],
+                correct: 2
+            },
+            {
+                question: "For the patient in the above question, if the systolic blood pressure is increased to 145 mmHg, assuming that the effective orifice area is unchanged, then the:",
+                options: ["MR jet size will double", "MR jet size will not change", "MR jet size will more than double"],
+                correct: 2
+            },
+            {
+                question: "For a given regurgitant volume, all of the following result in a reduction in the jet size except:",
+                options: ["Fast heart rate", "Doubling the sector angle", "Increasing the imaging depth", "Increasing the blood pressure"],
+                correct: 3
+            },
+            {
+                question: "In a patient with severe MR, all of the following factors increase its hemodynamic impact except:",
+                options: ["Mitral stenosis", "Left ventricular hypertrophy", "Compliant left atrium", "Concomitant aortic regurgitation"],
+                correct: 2
+            },
+            {
+                question: "In a patient undergoing aortic valve replacement (AVR) for aortic stenosis, there was evidence of moderate MR on a preoperative transthoracic echocardiogram. After the AVR, the next step to be taken is:",
+                options: ["Replace the mitral valve", "Leave the mitral valve alone", "Assess for MR with intraoperative TEE, and decide if repair or replacement is needed", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "A patient with old inferior wall myocardial infarction (MI) has severe MR with a posterolaterally directed jet in the left atrium. The most likely cause of MR in this patient is:",
+                options: ["Flail posterior leaflet", "Dilated mitral annulus", "Tented or apically tethered posterior mitral leaflet", "Tented or apically tethered anterior mitral leaflet"],
+                correct: 2
+            },
+            {
+                question: "Presence of severe aortic regurgitation (AR) in a patient with mitral stenosis is likely to do the following to the calculated mitral valve area by the pressure half-time method:",
+                options: ["Overestimate the valve area", "Underestimate the valve area", "No effect"],
+                correct: 0
+            },
+            {
+                question: "Presence of atrial septal defect (ASD) in a patient with mitral stenosis is likely to do the following to the calculated mitral valve area by the pressure half-time method:",
+                options: ["Overestimate the valve area", "Underestimate the valve area", "No change"],
+                correct: 0
+            },
+            {
+                question: "In a patient with mitral stenosis, the following diastolic flow measurements were obtained: maximal radius of proximal isovelocity surface area (PISA) 0.8 cm at an aliasing velocity of 50 cm/s, inlet angle 120 degrees, peak inflow velocity 2 m/s. The mitral valve area is:",
+                options: ["0.7 cm2", "1 cm2", "1.2 cm2", "1.5 cm2"],
+                correct: 0
+            },
+            {
+                question: "A patient with mitral stenosis without any MR or AR has a stroke volume of 70 cc/beat, a transmitral flow integral of 50 cm, and the mitral valve area is:",
+                options: ["0.7", "1", "1.4", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "A patient with MR has a transaortic flow of 70 cc/beat by the left ventricular outflow tract (LVOT) method and a transmitral flow of 112 cc/beat by the mitral annular method. The time velocity integral (TVI) of the MR signal by continuous wave Doppler is 60 cm. The effective regurgitant orifice (ERO) area of this patient is:",
+                options: ["1.5 cm2", "0.7 cm2", "0.4 cm2", "0.2 cm2"],
+                correct: 1
+            },
+            {
+                question: "For a patient with MR and AR, the following measurements were obtained using echo Doppler: flow across the pulmonary valve 75 cc/beat, flow across the mitral valve 120 cc/beat, flow across the aortic valve 90 cc/beat, TVI of MR signal 90 cm, TVI of AR signal 75 cm. The following statement is accurate in this patient:",
+                options: ["MR ERO is 0.5 cm2 and AR ERO is 0.2 cm2", "MR ERO is 1.3 cm2 and AR ERO is 1.2 cm2", "Cannot be calculated"],
+                correct: 0
+            },
+            {
+                question: "In a patient with isolated AR, the following measurements were obtained: transmitral flow 80 cc/beat, flow across aortic valve 140 cc/beat, TVI of AR signal 100 cm. The AR in this patient is:",
+                options: ["Mild", "Moderate", "Severe", "Cannot be determined"],
+                correct: 2
+            },
+            {
+                question: "A patient with dilated cardiomyopathy has an end diastolic pulmonary regurgitation (PR) velocity of 2 m/s and the estimated right atrial pressure is 10 mmHg. The following statement is true about this patient:",
+                options: ["Pulmonary artery (PA) pressure is normal", "Has mild or moderate pulmonary hypertension", "Has severe pulmonary hypertension", "Cannot estimate pulmonary pressure"],
+                correct: 1
+            },
+            {
+                question: "If the patient in question 114 had valvular pulmonary stenosis (PS) with a peak gradient of 36 mmHg, the estimated PA end diastolic pressure would be:",
+                options: ["16 mmHg", "26 mmHg", "36 mmHg", "62 mmHg"],
+                correct: 1
+            },
+            {
+                question: "If the patient in question 114 has tricuspid stenosis with a mean diastolic gradient of 8 mmHg across the tricuspid valve, the PA diastolic pressure would be:",
+                options: ["26 mmHg", "34 mmHg", "18 mmHg", "Cannot be estimated"],
+                correct: 2
+            },
+            {
+                question: "In a patient with valvular PS with right PA branch stenosis, the following measurements were obtained: tricuspid regurgitation (TR) velocity 4 m/s, right atrial (RA) pressure 6 mmHg, systolic velocity across the pulmonary valve 2.5 m/s, velocity across the discrete branch stenosis 2.5 m/s. The systolic pressure in the right pulmonary branch distal to the stenosis is likely to be:",
+                options: ["20 mmHg", "5 mmHg", "70 mmHg", "Cannot be estimated"],
+                correct: 0
+            },
+            {
+                question: "A 20-year-old patient with a large ventricular septal defect (VSD) underwent PA banding in childhood and was lost to follow-up. A recent echocardiogram revealed the following: peak systolic velocity across the VSD 3 m/s, TR velocity 5 m/s, estimated RA pressure 10 mmHg, cuff blood pressure in the right arm 146/70 mmHg, peak flow velocity across the pulmonary band 4.7 m/s. The following statement is true:",
+                options: ["This patient has normal PA pressure", "The patient has severe pulmonary hypertension", "The patient has features of left ventricular (LV) failure", "PA pressure cannot be determined"],
+                correct: 0
+            },
+            {
+                question: "The patient has an LVOT velocity of 1 m/s, TVI of 25 cm, LVOT diameter of 2 cm, aortic transvalvular velocity of 1.5 m/s, heart rate of 70 beats/min, and the cardiac output in this patient is:",
+                options: ["5.5 L", "4.5 L", "6.3 L", "Cannot be determined based on the given data"],
+                correct: 0
+            },
+            {
+                question: "A patient with aortic stenosis has an LVOT diameter of 2 cm, LVOT velocity (V1) of 2.5 m/s, transaortic valve velocity (V2) of 5 m/s, and two-dimensional examination showed moderate systolic anterior motion of the mitral leaflet. Valvular aortic stenosis in this patient is:",
+                options: ["Mild", "Moderate", "Severe", "Cannot be calculated based on the given data"],
+                correct: 3
+            },
+            {
+                question: "Bicuspid aortic valve may be associated with:",
+                options: ["Coronary anomalies", "Coarctation of the aorta", "Atrial septal defect", "None of the above"],
+                correct: 1
+            },
+            {
+                question: "A dilated coronary sinus could be seen in all of the following conditions except:",
+                options: ["Right atrial hypertension", "Persistent left superior vena cava", "Coronary A–V fistula", "Unroofed coronary sinus", "Azygos continuity of inferior vena cava"],
+                correct: 4
+            },
+            {
+                question: "Atrial septal defect (ASD) of sinus venosus type is most commonly associated with:",
+                options: ["Anomalous drainage of right upper pulmonary vein into the right atrium", "Anomalous drainage of left upper pulmonary vein into the right atrium", "Persistent left upper superior vena cava", "Coronary artery anomalies"],
+                correct: 0
+            },
+            {
+                question: "Ostium primum ASD is most commonly associated with:",
+                options: ["Cleft in anterior mitral leaflet", "Cleft in septal leaflet of the tricuspid valve", "Patent ductus arteriosus", "Aortic stenosis"],
+                correct: 0
+            },
+            {
+                question: "Dilatation of the pulmonary artery is seen in all of the following conditions except:",
+                options: ["Atrial septal defect", "Valvular pulmonary stenosis", "Infundibular pulmonary stenosis", "Pulmonary hypertension"],
+                correct: 2
+            },
+            {
+                question: "Risk of aortic dissection is increased in the following conditions except:",
+                options: ["Marfan’s syndrome", "Bicuspid aortic valve", "Pregnancy", "Mitral stenosis"],
+                correct: 3
+            },
+            {
+                question: "A 52-year-old patient with a 31 mm St. Jude mitral valve has severe shortness of breath. Left ventricular function and aortic valve are normal. The disk motion of the prosthetic valve is normal. Analysis of transmitral flow with continuous wave Doppler revealed an E-wave velocity of 2.6 m/s, A-wave velocity of 0.6 m/s, E-wave pressure half-time of 40 ms, diastolic mean gradient of 6 mmHg at a heart rate of 60/min, and isovolumic relaxation time (IVRT) of 30 ms. This patient is likely to have:",
+                options: ["Mitral regurgitation", "Pannus growth into the prosthetic valve", "Prosthetic valve thrombosis", "Normal prosthetic valve function"],
+                correct: 0
+            },
+            {
+                question: "In a person with suspected paravalvular (mechanical) mitral regurgitation, the following transducer position has the best chance of revealing the mitral regurgitation jet:",
+                options: ["Parasternal long axis view", "Apical four-chamber", "Apical two-chamber", "Apical long axis"],
+                correct: 0
+            },
+            {
+                question: "A patient with a bileaflet mechanical aortic valve has shortness of breath on exertion. An echocardiogram revealed normal left ventricular systolic function and mitral valve function. The left ventricular outflow tract (LVOT) dimension was 2.2 cm, LVOT (V1) velocity was 1.5 m/s, and aortic transvalvular velocity (V2) was 4.5 m/s, with no aortic regurgitation. Measurements obtained 2 years earlier when the patient was asymptomatic were LVOT diameter 2.2 cm, V1 0.9 m/s, and V2 2.7 m/s. Likely cause of this patient’s shortness of breath is:",
+                options: ["Prosthetic valve stenosis", "Patient–prosthesis mismatch", "High cardiac output state, patient may be anemic", "None of the above"],
+                correct: 2
+            },
+            {
+                question: "A patient with a mechanical prosthetic mitral valve has gastrointestinal bleeding and the following measurements were obtained: diastolic mean gradient 11 mmHg, peak gradient 16 mmHg, pressure half-time 65 ms, heart rate 114/min. This increased gradient is likely to be:",
+                options: ["Likely normal", "Likely abnormal", "Cannot comment"],
+                correct: 0
+            },
+            {
+                question: "The following measurements were obtained in a patient with mitral regurgitation: proximal isovelocity surface area (PISA) radius 1 cm at a Nyquist limit of 50 cm/s, peak mitral regurgitation velocity 5 m/s, and mitral regurgitation signal time velocity integral 100 cm. The regurgitant volume is:",
+                options: ["63 cc/beat", "31 cc/beat", "63 cc/s", "63%"],
+                correct: 0
+            },
+            {
+                question: "Distribution of leaflet thickening and calcification in rheumatic mitral stenosis is:",
+                options: ["More at the tip", "More at the base", "Uniform throughout the leaflets"],
+                correct: 0
+            },
+            {
+                question: "Leaflet calcification in degenerative mitral stenosis is:",
+                options: ["More at the tip", "More at the base", "Uniform throughout the leaflets"],
+                correct: 1
+            },
+            {
+                question: "The predominant mechanism of chronic ischemic mitral regurgitation is:",
+                options: ["Restriction of mitral leaflet closure", "Papillary muscle dysfunction", "Ruptured chordae tendinae", "Ruptured papillary muscle"],
+                correct: 0
+            },
+            {
+                question: "In a person with chronic ischemic mitral regurgitation (MR) due to old inferior myocardial infarction (MI) and an ejection fraction of 50%, the location of the MR jet would be:",
+                options: ["Medial commissure", "Lateral commissure", "Central"],
+                correct: 0
+            },
+            {
+                question: "In the above patient, the jet direction would be:",
+                options: ["Posterior", "Anterior", "Central"],
+                correct: 1
+            },
+            {
+                question: "In a patient with old anteroseptal MI with an ejection fraction of 28%, an ischemic MR jet is likely to be:",
+                options: ["Central", "Lateral wall hugging", "Medial wall hugging"],
+                correct: 0
+            },
+            {
+                question: "Mitral regurgitation in aortic stenosis is related to which of these factors:",
+                options: ["Degree of mitral annular calcification", "Severity of aortic stenosis", "An increase in LV end systolic dimension", "Degree of aortic leaflet calcification"],
+                correct: 2
+            },
+            {
+                question: "Left atrial myxoma may be differentiated from a left atrial thrombus by all of the following characteristics except:",
+                options: ["Enhancement with transpulmonary contrast agent", "Presence of blood vessels on color flow imaging", "Attachment to the atrial septum", "Similar mass in the left ventricle (LV) with normal LV function."],
+                correct: 3
+            },
+            {
+                question: "The most common location of a left atrial thrombus is:",
+                options: ["Left atrial appendage", "Body", "Atrial septum", "Atrial roof"],
+                correct: 0
+            },
+            {
+                question: "The most common benign tumor in the heart is:",
+                options: ["Left atrial myxoma", "Papillary fibroelastoma", "Lamble’s excrescences", "Fibroma"],
+                correct: 1
+            },
+            {
+                question: "The most common metastatic malignant tumor of the heart is:",
+                options: ["Melanoma", "Lung cancer", "Breast cancer", "Renal cancer"],
+                correct: 1
+            },
+            {
+                question: "In a person with flail P2 segment of the posterior mitral leaflet (PML), the mitral regurgitation (MR) jet is likely to be:",
+                options: ["Posterior wall hugging", "Anterior wall hugging", "Central", "Cannot comment"],
+                correct: 1
+            },
+            {
+                question: "In a person with flail A2 segment of the anterior mitral leaflet (AML), the MR jet is likely to be:",
+                options: ["Posterior wall hugging", "Anterior wall hugging", "Central", "Cannot comment"],
+                correct: 0
+            },
+            {
+                question: "Total surface area of mitral leaflets is generally ______% of mitral annular area.",
+                options: ["100%", "120%", "150%", "200%"],
+                correct: 2
+            },
+            {
+                question: "The PML compared to the AML is:",
+                options: ["Shorter", "Longer", "Same length as the anterior leaflet", "Of variable length"],
+                correct: 0
+            },
+            {
+                question: "The length of the posterior leaflet attachment to the mitral annulus compared to that of the AML is:",
+                options: ["Shorter", "Longer", "Same", "Variable"],
+                correct: 1
+            },
+            {
+                question: "In an apical long-axis view the following mitral leaflet segments are seen:",
+                options: ["A2P2", "A3P3", "A1P1", "A3P1"],
+                correct: 0
+            },
+            {
+                question: "Apical two-chamber view is likely to show the following mitral leaflet segments:",
+                options: ["P1A2P3", "A2P2", "A3P1", "A1P1"],
+                correct: 0
+            },
+            {
+                question: "The major diameter of the mitral annulus is best imaged from:",
+                options: ["Apical two-chamber view", "Apical long axis view", "Apical five-chamber view", "Parasternal long axis view"],
+                correct: 0
+            },
+            {
+                question: "The MR jet is best visualized in parasternal long axis view when the transducer tip is directed more inferomedially. The location of the MR jet in this patient is:",
+                options: ["Medial commissure", "Lateral commissure", "Central"],
+                correct: 0
+            },
+            {
+                question: "A continuous flow is visualized in the main pulmonary artery. This could be related to:",
+                options: ["Patent ductus arteriosus (PDA)", "Coronary A–V fistula", "Idiopathic dilatation of main pulmonary artery", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "Echocardiographic features of anatomic right ventricle in a congenitally corrected transposition of great vessels are all of the following except:",
+                options: ["Trileaflet atrioventricular valve", "Apical position of associated atrioventricular valve", "Presence of moderator band", "Wall thickness < 7 mm"],
+                correct: 3
+            },
+            {
+                question: "Problems encountered with congenitally corrected great arteries are all of the following except:",
+                options: ["Failure of systemic ventricle", "Tricuspid regurgitation", "Atrial and ventricular arrhythmias", "Aortic regurgitation"],
+                correct: 3
+            },
+            {
+                question: "Features of Tetralogy of Fallot are all of the following except:",
+                options: ["Overriding aorta", "Nonrestrictive ventricular septal defect (VSD)", "Pulmonary stenosis", "Right ventricular (RV) hypertrophy", "Atrial septal defect (ASD)"],
+                correct: 4
+            },
+            {
+                question: "Associations of atrial septal aneurysm include all of the following except:",
+                options: ["Patent foramen ovale", "Atrial arrythmias", "Transient ischemic attacks", "Pulmonary hypertension"],
+                correct: 3
+            },
+            {
+                question: "Echocardiographic findings in Ebstein’s anomaly may include:",
+                options: ["Apical displacement of the septal leaflet of the tricuspid valve > 8 mm compared to position of anterior mitral leaflet attachment", "Large, septal tricuspid leaflet with tethering to RV wall", "Tricuspid regurgitation", "Atrial septal defect", "Hypoplastic pulmonary arteries"],
+                correct: 4
+            },
+            {
+                question: "The most common location of the accessory pathway in Ebstein’s anomaly is:",
+                options: ["Posteroseptal", "Anteroseptal", "Right lateral", "Left lateral"],
+                correct: 2
+            },
+            {
+                question: "The following type of ventricular septal defect is likely to be associated with aortic regurgitation:",
+                options: ["Perimembranous", "Muscular", "Supracristal", "Inlet"],
+                correct: 2
+            },
+            {
+                question: "In a patient with secundum ASD, the following features are consistent with amenability of percutaneous closure except:",
+                options: ["Defect size of 22 mm", "Mitral rim of 8 mm", "Aortic rim of 2 mm", "Inferior vena cava rim of 1 mm"],
+                correct: 3
+            },
+            {
+                question: "Diagnostic sensitivity of stress echocardiography is higher with:",
+                options: ["One-vessel disease", "Two-vessel disease", "Three-vessel disease", "Sensitivity is not affected by number of vessels involved"],
+                correct: 2
+            },
+            {
+                question: "False-positive rate for stress echocardiography is high for which group of patients:",
+                options: ["Low probability of coronary artery disease (CAD)", "Intermediate probability of CAD", "High probability of CAD", "Independent of CAD"],
+                correct: 0
+            },
+            {
+                question: "Negative predictive value of stress echo is lowest in this group of patients:",
+                options: ["Low probability of CAD", "Intermediate probability of CAD", "High probability of CAD", "Independent of CAD"],
+                correct: 2
+            },
+            {
+                question: "False-positive wall motion abnormalities are most commonly seen in which of the following myocardial segments?",
+                options: ["Posterior basal wall", "Anterior septum", "Lateral wall", "Apex"],
+                correct: 0
+            },
+            {
+                question: "The most common normal response of left ventricular (LV) end systolic size during exercise is:",
+                options: ["Reduction", "Increase", "Variable response", "No change"],
+                correct: 0
+            },
+            {
+                question: "An increase in LV end systolic volume during stress may occur in all of the situations except:",
+                options: ["Multivessel CAD", "Left main CAD", "Hypertensive blood pressure response", "Left ventricular hypertrophy"],
+                correct: 3
+            },
+            {
+                question: "A 53-year-old patient is undergoing dobutamine stress echocardiography (DSE). At 20 μg dose, the blood pressure drops from 140/80 mmHg to 80/50 mmHg associated with severe nausea, and the heart rate dropped from 110/min to 60/min. The most likely cause of this response is:",
+                options: ["Left ventricular cavity obliteration causing a vagal response", "Severe ischemic response due to multivessel CAD", "2:1 A–V block produced by ischemia in right coronary artery territory", "None of the above"],
+                correct: 0
+            },
+            {
+                question: "What proportion of normal patients undergoing DSE may have a drop in their blood pressure:",
+                options: ["Zero", "20%", "50%", "89%"],
+                correct: 1
+            },
+            {
+                question: "All of the following factors affect pulmonary vein A-wave amplitude except:",
+                options: ["LV end diastolic stiffness", "Left atrial function", "Pulmonary vein diameter", "Heart rate", "Pulmonary artery pressure"],
+                correct: 4
+            },
+            {
+                question: "The pulmonary vein S-wave may be less prominent than the D-wave in the following situations except:",
+                options: ["Young children", "Moderate to severe mitral regurgitation", "Atrial fibrillation", "Elevated left atrial (LA) pressure", "Abnormal LV relaxation with normal left atrial (LA) pressure"],
+                correct: 4
+            },
+            {
+                question: "Normal pulmonary vein A-wave duration compared with mitral A-wave duration is:",
+                options: ["Less", "More", "Same", "Variable"],
+                correct: 0
+            },
+            {
+                question: "Normal pulmonary vein D-wave deceleration in an adult is:",
+                options: ["50–100 ms", "100–170 ms", "170–260 ms", "Highly variable"],
+                correct: 2
+            },
+            {
+                question: "Increased pulmonary vein D-wave deceleration time may be encountered in:",
+                options: ["Mitral stenosis", "Mitral regurgitation", "High LA pressure", "Pulmonary valve stenosis"],
+                correct: 0
+            },
+            {
+                question: "Normal mitral E-wave propagation velocity by color M mode inside the LV is:",
+                options: ["10–30 cm/s", "30–50 cm/s", "Greater than 50 cm/s", "Greater than 500 cm/s"],
+                correct: 2
+            },
+            {
+                question: "A reduced mitral E-wave propagation velocity indicates:",
+                options: ["High LA pressure", "Increased tau", "Reduced tau", "Increased modulus LV chamber stiffness"],
+                correct: 1
+            },
+            {
+                question: "A reduced A-wave transit time to the LV outflow tract is indicative of:",
+                options: ["Low negative dp/dt", "Increased tau", "Reduced tau", "Increased modulus of LV chamber stiffness"],
+                correct: 3
+            },
+            {
+                question: "Rate of acceleration of the early portion of the aortic regurgitation (AR) signal is determined by:",
+                options: ["LV negative dp/dt", "LV positive dp/dt", "LV end diastolic pressure", "Aortic end diastolic pressure"],
+                correct: 0
+            },
+            {
+                question: "Rapidly decelerating terminal portion of the AR signal is mainly influenced by:",
+                options: ["LV negative dp/dt", "LV positive dp/dt", "LV end diastolic pressure", "Aortic end diastolic pressure"],
+                correct: 1
+            },
+            {
+                question: "A patient has mild mitral regurgitation and the time taken for mitral regurgitation velocity to drop from 3 m/s velocity to 1 m/s on continuous wave Doppler examination was 40 ms. The average rate of LV pressure decay in this patient is:",
+                options: ["3600 mmHg/s", "1280 mm/s", "800 mm/s", "400 mm/s"],
+                correct: 2
+            },
+            {
+                question: "By tissue velocity imaging, the mitral annular Sm wave is produced by:",
+                options: ["Annular descent during systole", "Annular ascent during systole", "Atrial contraction", "LV relaxation"],
+                correct: 0
+            },
+            {
+                question: "Compared to timing of mitral E-wave peak, mitral annular Em peak is:",
+                options: ["Earlier", "Later", "Simultaneous", "No relationship"],
+                correct: 0
+            },
+            {
+                question: "Post-ejection left ventricular (LV) shortening may be found in all of the following conditions except:",
+                options: ["Hypertensive heart disease", "Ischemic cardiomyopathy", "Cardiac syndrome X", "Mitral stenosis"],
+                correct: 3
+            },
+            {
+                question: "Compared to the epicardial, endocardial radial velocities are:",
+                options: ["Higher", "Lower", "Similar", "Variable"],
+                correct: 0
+            },
+            {
+                question: "The following myocardial velocities were obtained from the posterior wall by color Doppler tissue imaging: peak systolic epicardial velocity 2 cm/s, peak systolic endocardial velocity 16 cm/s, systolic LV wall thickness 1.4 cm, early diastolic epicardial velocity 3 cm/s, endocardial velocity 18 cm/s, and diastolic wall thickness 1 cm. The systolic transmural velocity gradient in this patient is:",
+                options: ["10/s", "14 cm/s", "19.6 cm/s", "19.6/s"],
+                correct: 0
+            },
+            {
+                question: "For the patient in question 184, diastolic myocardial velocity gradient for the posterior wall is:",
+                options: ["15/s", "1.5/s", "18/s", "18 cm/s"],
+                correct: 0
+            },
+            {
+                question: "In a person with cardiomyopathy, the following Doppler measurements were obtained: Q wave to aortic flow 140 ms, Q wave to pulmonary flow 70 ms, Q to medial mitral annular Sm wave 70 ms, Q to anterior mitral annular Sm wave 85 ms, Q to lateral Sm wave 140 ms, and Q to posterior wall Sm wave 130 ms. Interventricular asynchrony in this patient is:",
+                options: ["70 ms", "140 ms", "85 ms", "50 ms"],
+                correct: 0
+            },
+            {
+                question: "In the patient in question 186, LV intraventricular asynchrony is:",
+                options: ["70 ms", "140 ms", "85 ms", "130 ms"],
+                correct: 0
+            },
+            {
+                question: "Stroke risk in a patient with patent foramen ovale (PFO) is influenced by:",
+                options: ["Size of PFO", "Atrial septal aneurysm", "History of prior stroke or transient ischemic attack", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "Atrial septal aneurysm may be associated with:",
+                options: ["Patent foramen ovale", "Atrial arrythmias", "Increased stroke risk", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "Observational data on percutaneous PFO closure indicate that the benefit is greater with:",
+                options: ["Larger PFO", "Complete PFO closure", "Greater number of previous strokes", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "All of the following are probable causes of mitral stenosis except:",
+                options: ["Rheumatic fever", "Excessive calcification of the mitral annulus", "Phen-fen valvulopathy", "Ischemic heart disease"],
+                correct: 3
+            },
+            {
+                question: "Bicuspid aortic valve may be associated with the following except:",
+                options: ["Aortic root disease", "Coarctation of the aorta", "Aortic stenosis or regurgitation", "Ventricular septal defect"],
+                correct: 3
+            },
+            {
+                question: "Common cause of aortic stenosis in a 50-year-old individual is:",
+                options: ["Calcific", "Bicuspid aortic valve", "Unicuspid aortic valve", "Rheumatic heart disease"],
+                correct: 1
+            },
+            {
+                question: "Heart failure with normal ejection fraction can occur in the following except:",
+                options: ["Hypertrophic cardiomyopathy", "Cardiac amyloid", "Restrictive cardiomyopathy", "Dilated cardiomyopathy"],
+                correct: 3
+            },
+            {
+                question: "Basic components of a partial AV canal defect include all except:",
+                options: ["Inlet ventricular septal defect", "Septum primum atrial septal defect", "Cleft mitral valve", "Widened anteroseptal tricuspid commissure and cleft in septal tricuspid leaflet"],
+                correct: 0
+            },
+            {
+                question: "Signs of acute aortic regurgitation include:",
+                options: ["Premature mitral valve closure", "Hyperdynamic LV function", "Normal left ventricle size", "All of the above", "None of the above"],
+                correct: 3
+            },
+            {
+                question: "The following are indicative of severe mitral regurgitation except:",
+                options: ["Systolic flow reversal in the pulmonary veins", "Regurgitant fraction of >60%", "Effective regurgitant orifice area of ≥0.4 cm2", "Vena contracta diameter of ≥3 mm"],
+                correct: 3
+            },
+            {
+                question: "The following are signs of chronic severe aortic regurgitation except:",
+                options: ["Regurgitant fraction ≥60%", "Regurgitant volume of ≥60 cc", "Effective orifice area ≥0.2 cm2", "Vena contracta width ≥0.6 cm"],
+                correct: 2
+            },
+            {
+                question: "Prosthetic valve gradients are increased in following conditions except:",
+                options: ["Anemia", "Febrile state", "LV diastolic dysfunction", "Hyperthyroidism"],
+                correct: 2
+            },
+            {
+                question: "What is the velocity of circumferential fiber shortening (VCF) in a patient with the following measurements: LV end diastolic dimension 50 mm, end systolic dimension 33 mm, LV ejection time 300 ms.",
+                options: ["1.1", "0.9", "34", "Cannot be calculated"],
+                correct: 0
             }
-            
         ];
 
         let currentPage = 0;
@@ -446,19 +1493,19 @@
         let userAnswers = {};
         let totalPages = Math.ceil(questions.length / questionsPerPage);
 
-   function displayQuestions() {
-    const container = document.getElementById('questionsContainer');
-    const startIndex = currentPage * questionsPerPage;
-    const endIndex = Math.min(startIndex + questionsPerPage, questions.length);
-    
-    container.innerHTML = '';
-    
-    for (let i = startIndex; i < endIndex; i++) {
-        const question = questions[i];
-        const questionCard = document.createElement('div');
-        questionCard.className = 'question-card';
-        
-        questionCard.innerHTML = `
+        function displayQuestions() {
+            const container = document.getElementById('questionsContainer');
+            const startIndex = currentPage * questionsPerPage;
+            const endIndex = Math.min(startIndex + questionsPerPage, questions.length);
+
+            container.innerHTML = '';
+
+            for (let i = startIndex; i < endIndex; i++) {
+                const question = questions[i];
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+
+                questionCard.innerHTML = `
             <div class="question-number">Question ${i + 1}</div>
             <div class="question-text">${question.question}</div>
             ${question.image ? `
@@ -467,7 +1514,7 @@
                          onerror="this.style.display='none';">
                 </div>
             ` : ''}
-            <ul class="options">
+            <ul class=options>
                 ${question.options.map((option, index) => `
                     <li class="option">
                         <input type="radio" id="q${i}_${index}" name="q${i}" value="${index}" 
@@ -478,13 +1525,13 @@
                 `).join('')}
             </ul>
         `;
-        
-        container.appendChild(questionCard);
-    }
-    
-    updateNavigation();
-    updateProgressBar();
-}
+
+                container.appendChild(questionCard);
+            }
+
+            updateNavigation();
+            updateProgressBar();
+        }
         function saveAnswer(questionIndex, answerIndex) {
             userAnswers[questionIndex] = answerIndex;
         }
@@ -494,9 +1541,9 @@
             const nextBtn = document.getElementById('nextBtn');
             const submitBtn = document.getElementById('submitBtn');
             const currentQuestionSpan = document.getElementById('currentQuestion');
-            
+
             prevBtn.style.display = currentPage === 0 ? 'none' : 'block';
-            
+
             if (currentPage === totalPages - 1) {
                 nextBtn.classList.add('hidden');
                 submitBtn.classList.remove('hidden');
@@ -504,7 +1551,7 @@
                 nextBtn.classList.remove('hidden');
                 submitBtn.classList.add('hidden');
             }
-            
+
             currentQuestionSpan.textContent = (currentPage * questionsPerPage) + 1;
         }
 
@@ -534,16 +1581,16 @@
 
         function calculateResults() {
             let correct = 0;
-            
+
             for (let i = 0; i < questions.length; i++) {
                 if (userAnswers[i] === questions[i].correct) {
                     correct++;
                 }
             }
-            
+
             const incorrect = questions.length - correct;
             const percentage = Math.round((correct / questions.length) * 100);
-            
+
             document.getElementById('correctAnswers').textContent = correct;
             document.getElementById('incorrectAnswers').textContent = incorrect;
             document.getElementById('scorePercent').textContent = percentage + '%';
@@ -565,14 +1612,14 @@
         function displayReview() {
             const container = document.getElementById('reviewContainer');
             container.innerHTML = '';
-            
+
             questions.forEach((question, index) => {
                 const userAnswer = userAnswers[index];
                 const isCorrect = userAnswer === question.correct;
-                
+
                 const reviewCard = document.createElement('div');
                 reviewCard.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
-                
+
                 reviewCard.innerHTML = `
                     <div class="question-number">Question ${index + 1} ${isCorrect ? '✅' : '❌'}</div>
                     <div class="question-text">${question.question}</div>
@@ -587,26 +1634,26 @@
                     ` : ''}
                     <div class="review-options">
                         ${question.options.map((option, optIndex) => {
-                            let className = 'review-option';
-                            if (optIndex === question.correct) {
-                                className += ' correct';
-                            }
-                            if (optIndex === userAnswer && optIndex !== question.correct) {
-                                className += ' incorrect user-answer';
-                            }
-                            if (optIndex === userAnswer && optIndex === question.correct) {
-                                className += ' user-answer';
-                            }
-                            
-                            return `<div class="${className}">
+                    let className = 'review-option';
+                    if (optIndex === question.correct) {
+                        className += ' correct';
+                    }
+                    if (optIndex === userAnswer && optIndex !== question.correct) {
+                        className += ' incorrect user-answer';
+                    }
+                    if (optIndex === userAnswer && optIndex === question.correct) {
+                        className += ' user-answer';
+                    }
+
+                    return `<div class="${className}">
                                 ${option} 
                                 ${optIndex === question.correct ? '(Correct)' : ''} 
                                 ${optIndex === userAnswer && optIndex !== question.correct ? '(Your Answer)' : ''}
                             </div>`;
-                        }).join('')}
+                }).join('')}
                     </div>
                 `;
-                
+
                 container.appendChild(reviewCard);
             });
         }
@@ -625,4 +1672,5 @@
         displayQuestions();
     </script>
 </body>
+
 </html>

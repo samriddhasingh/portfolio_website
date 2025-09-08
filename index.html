@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,6 +84,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -141,18 +143,18 @@
             background: white;
         }
 
-        .option input[type="radio"]:checked + label {
+        .option input[type="radio"]:checked+label {
             background: #e3f2fd;
             border-color: #4facfe;
             color: #1976d2;
         }
 
-        .option input[type="radio"]:checked + label::before {
+        .option input[type="radio"]:checked+label::before {
             background: #4facfe;
             border-color: #4facfe;
         }
 
-        .option input[type="radio"]:checked + label::after {
+        .option input[type="radio"]:checked+label::after {
             content: '';
             position: absolute;
             left: 21px;
@@ -346,6 +348,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -438,7 +441,101 @@
                 options: ["Square", "Circle", "Triangle", "Rectangle"],
                 correct: 2
             }*/
-            
+            {
+                question: "In which situation can you not use the simplified Bernoulli equation to derive the pressure gradient?",
+                options: [
+                    "Peak instantaneous gradient across a nonobstructed mitral valve",
+                    "Peak gradient across a severely stenotic aortic valve",
+                    "Mean gradient across a severely stenotic aortic valve",
+                    "Mean gradient across a stenotic tricuspid valve"
+                ],
+                correct: 0
+            },
+            {
+                question: "Which of the following resolutions change with increasing field depth?",
+                options: ["Axial resolution", "Lateral resolution"],
+                correct: 1
+            },
+            {
+                question: "With a fixed-focus transducer with crystal diameter 20 mm and wavelength 2.5 mm, what is the depth of the focus?",
+                options: ["40 m", "30 mm", "40 mm", "4 m"],
+                correct: 2
+            },
+            {
+                question: "A sonographer adjusts the ultrasound machine to double the depth of view from 5 to 10 cm. If sector angle is reduced to keep the frame rate constant, which of the following has changed?",
+                options: ["Axial resolution", "Temporal resolution", "Lateral resolution", "The wavelength"],
+                correct: 2
+            },
+            {
+                question: "Which of the following properties of a reflected wave is most important in the genesis of a two-dimensional image?",
+                options: ["Amplitude", "Period", "Pulse repetition period", "Pulse duration"],
+                correct: 0
+            },
+            {
+                question: "Increasing depth will change all of the following except:",
+                options: ["Pulse duration", "Pulse repetition period", "Pulse repetition frequency", "Duty factor"],
+                correct: 0
+            },
+            {
+                question: "The two-dimensional images are produced because of this phenomenon when the ultrasound reaches the tissue:",
+                options: ["Refraction", "Backscatter", "Specular reflection", "Transmission"],
+                correct: 1
+            },
+            {
+                question: "Attenuation of ultrasound as it travels through tissue is higher at:",
+                options: [
+                    "Greater depth",
+                    "Lower transducer frequency",
+                    "Blood rather than soft tissue like muscle",
+                    "Bone more than air"
+                ],
+                correct: 0
+            },
+            {
+                question: "The half-intensity depth is a measure of:",
+                options: [
+                    "Ultrasound attenuation in tissue",
+                    "Half the wall thickness in mm",
+                    "Coating on the surface of the transducer",
+                    "Half the ultrasound beam width"
+                ],
+                correct: 0
+            },
+            {
+                question: "What is the highest pulse repetition frequency (PRF) of a 3 MHz pulsed wave transducer imaging at a depth of 7 cm?",
+                options: ["21 000 Hz", "2 333 Hz", "11 000 Hz", "2.1 million Hz"],
+                correct: 2
+            },
+            {
+                question: "Examples of continuous wave imaging include:",
+                options: [
+                    "Two-dimensional image",
+                    "Volumetric scanner-acquired LV image",
+                    "Color flow imaging",
+                    "Nonimaging Doppler probe (Pedoff)"
+                ],
+                correct: 3
+            },
+            {
+                question: "Which of the following manipulations will increase the frame rate?",
+                options: ["Increase depth", "Increase transmit frequency", "Decrease sector angle", "Increase transmit power"],
+                correct: 2
+            },
+            {
+                question: "The lateral resolution increases with:",
+                options: ["Decreasing transducer diameter", "Reducing power", "Beam focusing", "Reducing transmit frequency"],
+                correct: 2
+            },
+            {
+                question: "Axial resolution can be improved by which of the following manipulations?",
+                options: ["Reduce beam diameter", "Beam focusing", "Reduce gain", "Increase transmit frequency"],
+                correct: 3
+            },
+            {
+                question: "Type of sound used in medical imaging is:",
+                options: ["Ultrasound", "Infrasound", "Audible sound", "Inaudible Sound"],
+                correct: 0
+            }
         ];
 
         let currentPage = 0;
@@ -446,19 +543,19 @@
         let userAnswers = {};
         let totalPages = Math.ceil(questions.length / questionsPerPage);
 
-   function displayQuestions() {
-    const container = document.getElementById('questionsContainer');
-    const startIndex = currentPage * questionsPerPage;
-    const endIndex = Math.min(startIndex + questionsPerPage, questions.length);
-    
-    container.innerHTML = '';
-    
-    for (let i = startIndex; i < endIndex; i++) {
-        const question = questions[i];
-        const questionCard = document.createElement('div');
-        questionCard.className = 'question-card';
-        
-        questionCard.innerHTML = `
+        function displayQuestions() {
+            const container = document.getElementById('questionsContainer');
+            const startIndex = currentPage * questionsPerPage;
+            const endIndex = Math.min(startIndex + questionsPerPage, questions.length);
+
+            container.innerHTML = '';
+
+            for (let i = startIndex; i < endIndex; i++) {
+                const question = questions[i];
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+
+                questionCard.innerHTML = `
             <div class="question-number">Question ${i + 1}</div>
             <div class="question-text">${question.question}</div>
             ${question.image ? `
@@ -478,13 +575,13 @@
                 `).join('')}
             </ul>
         `;
-        
-        container.appendChild(questionCard);
-    }
-    
-    updateNavigation();
-    updateProgressBar();
-}
+
+                container.appendChild(questionCard);
+            }
+
+            updateNavigation();
+            updateProgressBar();
+        }
         function saveAnswer(questionIndex, answerIndex) {
             userAnswers[questionIndex] = answerIndex;
         }
@@ -494,9 +591,9 @@
             const nextBtn = document.getElementById('nextBtn');
             const submitBtn = document.getElementById('submitBtn');
             const currentQuestionSpan = document.getElementById('currentQuestion');
-            
+
             prevBtn.style.display = currentPage === 0 ? 'none' : 'block';
-            
+
             if (currentPage === totalPages - 1) {
                 nextBtn.classList.add('hidden');
                 submitBtn.classList.remove('hidden');
@@ -504,7 +601,7 @@
                 nextBtn.classList.remove('hidden');
                 submitBtn.classList.add('hidden');
             }
-            
+
             currentQuestionSpan.textContent = (currentPage * questionsPerPage) + 1;
         }
 
@@ -534,16 +631,16 @@
 
         function calculateResults() {
             let correct = 0;
-            
+
             for (let i = 0; i < questions.length; i++) {
                 if (userAnswers[i] === questions[i].correct) {
                     correct++;
                 }
             }
-            
+
             const incorrect = questions.length - correct;
             const percentage = Math.round((correct / questions.length) * 100);
-            
+
             document.getElementById('correctAnswers').textContent = correct;
             document.getElementById('incorrectAnswers').textContent = incorrect;
             document.getElementById('scorePercent').textContent = percentage + '%';
@@ -565,14 +662,14 @@
         function displayReview() {
             const container = document.getElementById('reviewContainer');
             container.innerHTML = '';
-            
+
             questions.forEach((question, index) => {
                 const userAnswer = userAnswers[index];
                 const isCorrect = userAnswer === question.correct;
-                
+
                 const reviewCard = document.createElement('div');
                 reviewCard.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
-                
+
                 reviewCard.innerHTML = `
                     <div class="question-number">Question ${index + 1} ${isCorrect ? '✅' : '❌'}</div>
                     <div class="question-text">${question.question}</div>
@@ -587,26 +684,26 @@
                     ` : ''}
                     <div class="review-options">
                         ${question.options.map((option, optIndex) => {
-                            let className = 'review-option';
-                            if (optIndex === question.correct) {
-                                className += ' correct';
-                            }
-                            if (optIndex === userAnswer && optIndex !== question.correct) {
-                                className += ' incorrect user-answer';
-                            }
-                            if (optIndex === userAnswer && optIndex === question.correct) {
-                                className += ' user-answer';
-                            }
-                            
-                            return `<div class="${className}">
+                    let className = 'review-option';
+                    if (optIndex === question.correct) {
+                        className += ' correct';
+                    }
+                    if (optIndex === userAnswer && optIndex !== question.correct) {
+                        className += ' incorrect user-answer';
+                    }
+                    if (optIndex === userAnswer && optIndex === question.correct) {
+                        className += ' user-answer';
+                    }
+
+                    return `<div class="${className}">
                                 ${option} 
                                 ${optIndex === question.correct ? '(Correct)' : ''} 
                                 ${optIndex === userAnswer && optIndex !== question.correct ? '(Your Answer)' : ''}
                             </div>`;
-                        }).join('')}
+                }).join('')}
                     </div>
                 `;
-                
+
                 container.appendChild(reviewCard);
             });
         }
@@ -625,4 +722,5 @@
         displayQuestions();
     </script>
 </body>
+
 </html>

@@ -69,6 +69,19 @@
             padding: 40px;
         }
 
+        .chapter-header {
+            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
         .question-card {
             background: white;
             border-radius: 15px;
@@ -345,6 +358,11 @@
                 width: 100%;
                 padding: 15px;
             }
+
+            .chapter-header {
+                font-size: 1.5em;
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -409,8 +427,11 @@
     </div>
 
     <script>
-        const questions = [
-            {
+         const questions = [
+           
+
+             {
+                chapter:1,
                 question: "The spped of sound in tissue is",
                 options: ["Roughly 1540 m/s", "Roughly 1540 km/s", "Roughly 1540 cm/s", "Roughly 1540m/min"],
                 correct: 0
@@ -536,7 +557,16 @@
                 options: ["Ultrasound", "Infrasound", "Audible sound", "Inaudible Sound"],
                 correct: 0
             },
+
+
+
+
+
+
+
+
             {
+                chapter:2,
                 question: "Doppler shift is typically in:",
                 options: ["Ultrasound range", "Infrasound range", "Audible range"],
                 correct: 2
@@ -682,7 +712,17 @@
                 options: ["Aliasing", "Range specificity", "Ability to record higher velocities", "All of the above"],
                 correct: 2
             },
+
+
+
+
+
+
+
+
+
             {
+                chapter:3,
                 question: "As transducer frequency increases, backscatter strength:",
                 options: ["Decreases", "Increases", "Does not change", "Refracts"],
                 correct: 1
@@ -782,7 +822,18 @@
                 options: ["Vessel length", "Vessel radius", "Blood viscosity", "All of the above"],
                 correct: 1
             },
+
+
+
+
+
+
+
+
+
+
             {
+                chapter:4,
                 question: "Volumetric flow rate decreases with an increase in:",
                 options: ["Pressure difference", "Vessel radius", "Vessel length", "Blood viscosity", "Vessel length and blood viscosity"],
                 correct: 4
@@ -885,7 +936,16 @@
                 options: ["Severe MR", "Severe aortic stenosis", "Severe aortic regurgitation", "Severe pulmonary stenosis"],
                 correct: 1
             },
+
+
+
+
+
+
+
+
             {
+                chapter:5,
                 question: "The Doppler signal is consistent with:",
                 image: "q81.png",
                 options: ["Severe aortic regurgitation and moderate aortic stenosis", "Severe mitral stenosis", "Acute severe mitral regurgitation", "Ventricular septal defect"],
@@ -986,7 +1046,10 @@
                 options: ["Remain unchanged", "Be more", "Be less", "None of the above"],
                 correct: 2
             },
+
+
             {
+                chapter:6,
                 question: "An intraoperative transesophageal echocardiogram (TEE) revealed mitral regurgitation with the following measurements: regurgitant jet area 4 cm2, PISA radius 0.8 cm at a Nyquist limit of 50 cm/s at a heart rate of 82 beats/min, and arterial blood pressure 80/40 mmHg. This represents:",
                 options: ["Mild mitral regurgitation (MR)", "Moderate MR", "Severe MR"],
                 correct: 2
@@ -1086,7 +1149,17 @@
                 options: ["Mild", "Moderate", "Severe", "Cannot be calculated based on the given data"],
                 correct: 3
             },
+
+
+
+
+
+
+
+
+
             {
+                  chapter:7,
                 question: "Bicuspid aortic valve may be associated with:",
                 options: ["Coronary anomalies", "Coarctation of the aorta", "Atrial septal defect", "None of the above"],
                 correct: 1
@@ -1186,7 +1259,14 @@
                 options: ["Left atrial appendage", "Body", "Atrial septum", "Atrial roof"],
                 correct: 0
             },
+
+
+
+
+
+
             {
+                chapter:8,
                 question: "The most common benign tumor in the heart is:",
                 options: ["Left atrial myxoma", "Papillary fibroelastoma", "Lamble’s excrescences", "Fibroma"],
                 correct: 1
@@ -1286,7 +1366,17 @@
                 options: ["Defect size of 22 mm", "Mitral rim of 8 mm", "Aortic rim of 2 mm", "Inferior vena cava rim of 1 mm"],
                 correct: 3
             },
+
+
+
+
+
+
+
+
+
             {
+                chapter :9,
                 question: "Diagnostic sensitivity of stress echocardiography is higher with:",
                 options: ["One-vessel disease", "Two-vessel disease", "Three-vessel disease", "Sensitivity is not affected by number of vessels involved"],
                 correct: 2
@@ -1386,7 +1476,17 @@
                 options: ["Annular descent during systole", "Annular ascent during systole", "Atrial contraction", "LV relaxation"],
                 correct: 0
             },
+
+
+
+
+
+
+
+
+
             {
+                chapter:10,
                 question: "Compared to timing of mitral E-wave peak, mitral annular Em peak is:",
                 options: ["Earlier", "Later", "Simultaneous", "No relationship"],
                 correct: 0
@@ -1486,7 +1586,15 @@
                 options: ["1.1", "0.9", "34", "Cannot be calculated"],
                 correct: 0
             },
+
+
+
+
+
+
+
             {
+                chapter:11,
                 question: "Principal determinants of LV end systolic circumferential wall stress include all of the following except:",
                 options: ["Left ventricular (LV) end systolic dimension", "Left ventricular (LV) end systolic pressure", "Left ventricular (LV) systolic wall thickness", "Left ventricular (LV) pressure at mitral valve closure"],
                 correct: 3
@@ -1586,7 +1694,18 @@
                 options: ["Mean LA pressure of 10 mmHg and LV end diastolic pressure (LVEDP) of 22 mmHg", "Mean LA pressure of 22 mmHg and LVEDP of 10 mmHg", "Mean LA pressure of 10 mmHg and LVEDP of 12 mmHg", "Mean LA pressure of 28 mmHg and LVEDP of 30 mmHg", "Mean LA pressure of 28 mmHg and LVEDP of 40 mmHg"],
                 correct: 0
             },
+
+
+
+
+
+
+
+
+
+
             {
+                chapter:12,
                 question: "The following are potential complications of aortic valve endocarditis:",
                 options: ["Aortic root abscess", "Supra-annular mitral regurgitation", "Aneurysm of mitral–aortic intervalvular fibrosa", "Aneurysm of anterior mitral leaflet", "All of the above"],
                 correct: 4
@@ -1700,7 +1819,16 @@
                 options: ["Low", "Normal", "Elevated", "Cannot comment"],
                 correct: 2
             },
+
+
+
+
+
+
+
+
             {
+                chapter:13,
                 question: "This patient is likely to have:",
                 image: "q241.png",
                 options: ["Severe aortic stenosis (AS)", "Severe mitral regurgitation (MR)", "Severe pulmonary hypertension", "Mild AS"],
@@ -1820,7 +1948,16 @@
                 options: ["Aortic stenosis", "Normal opening trileaflet aortic valve", "Bicuspid aortic valve that opens well", "Unicommissural aortic valve"],
                 correct: 1
             },
+
+
+
+
+
+
+
+
             {
+                chapter:14,
                 question: "The arrow here points to:",
                 image: "q261.png",
                 options: ["Left atrium", "Right pulmonary artery", "Posterior pericardial effusion", "Left pleural effusion"],
@@ -1838,6 +1975,11 @@
                 options: ["Artifact", "Catheter in right atrium", "Thrombus", "Loose suture material"],
                 correct: 1
             },
+
+
+
+
+
             {
                 question: "The patient may have all of the following except:",
                 image: "q264.png",
@@ -1940,7 +2082,18 @@
                 options: ["Pleural effusion", "Pericardial effusion", "Pericardial pad of fat", "Artifact"],
                 correct: 1
             },
+
+
+
+
+
+
+
+
+
+
             {
+                chapter:15,
                 question: "This image shows a vegetation on the:",
                 image: "q281.png",
                 options: ["Aortic valve", "P2 scallop of mitral valve", "P1 scallop of mitral valve", "A2 scallop of mitral valve"],
@@ -2060,7 +2213,16 @@
                 options: ["Left atrial myxoma", "Aneurysmal atrial septum", "ASD", "None of the above"],
                 correct: 1
             },
+
+
+
+
+
+
+
+
             {
+                chapter:16,
                 question: "The parasternal long-axis image of the mitral valve apparatus shows:",
                 image: "q301.png",
                 options: ["Mitral annular calcification", "Rheumatic mitral stenosis", "Systolic anterior motion", "Annuloplasty ring"],
@@ -2180,7 +2342,18 @@
                 options: ["Severe mitral annular calcification", "Mitral annuloplasty ring", "Rheumatic mitral valve disease", "None of the above"],
                 correct: 1
             },
+
+
+
+
+
+
+
+
+
+
             {
+                chapter:17,
                 question: "The cause of dyspnea in this patient is likely to be due to:",
                 image: "q321.png",
                 options: ["Left heart failure", "Primary pulmonary hypertension", "Chronic obstructive pulmonary disorder", "None of the above"],
@@ -2300,7 +2473,11 @@
                 options: ["Aortic valve vegetation", "Node of Arantius", "Lambl’s excrescences", "Ascending aortic dissection causing prolapse of the noncoronary cusp"],
                 correct: 0
             },
+            
+
+
             {
+                chapter:18,
                 question: "This continuous wave Doppler signal is indicative of:",
                 image: "q341.png",
                 options: ["Acute severe aortic regurgitation (AR)", "Chronic compensated AR", "Severe aortic stenosis (AS)", "Severe mixed mitral valve disease"],
@@ -2420,7 +2597,14 @@
                 options: ["ASD repair with a pericardial patch", "ASD closure device", "PFO closure device", "None of the above"],
                 correct: 2
             },
+
+
+
+
+
+
             {
+                chapter:19,
                 question: "The image shows:",
                 image: "q361.png",
                 options: ["Normal native tricuspid valve", "Normal bioprosthetic valve", "Vegetation on a bioprosthetic valve", "Avulsion of the tricuspid valve"],
@@ -2540,7 +2724,14 @@
                 options: ["Thoracic aortic aneurysm", "Cor triatriatum", "Artifact", "Dilated left PA"],
                 correct: 0
             },
+
+
+
+
+
+
             {
+                chapter:20,
                 question: "The commonest location of this pathology is:",
                 image: "q381.png",
                 options: ["Proximal ascending aorta", "Midaortic arch", "At the attachment of ligamentum arteriosum", "Junction of thoracic and abdominal aorta"],
@@ -2660,7 +2851,15 @@
                 options: ["Left atrial thrombus", "Aortic dissection", "Saccular aneurysm of the aorta with a thrombus", "Aortic pseudoaneurysm"],
                 correct: 1
             },
+
+
+
+
+
+
+
             {
+                chapter:21,
                 question: "This patient is likely to have:",
                 image: "q401.png",
                 options: ["Mitral valve prolapse", "Elevated left ventricular end-diastolic pressure", "Hypertrophic obstructive cardiomyopathy", "Severe aortic regurgitation"],
@@ -2780,7 +2979,14 @@
                 options: ["Pulmonary hypertension", "Pulmonary stenosis", "Pulmonary regurgitation", "Large atrial septal defect"],
                 correct: 0
             },
+
+
+
+
+
+
             {
+                chapter:22,
                 question: "This TEE image is diagnostic of:",
                 image: "q421.png",
                 options: ["Rheumatic mitral stenosis", "Mitral regurgitation", "Prosthetic valve stenosis", "Calcific mitral stenosis"],
@@ -2905,7 +3111,16 @@
                 options: ["Carcinoid syndrome", "Severe pulmonary hypertension", "Constriction", "None of the above"],
                 correct: 0
             },
+
+
+
+
+
+
+
+
             {
+                chapter:23,
                 question: "A 45-year-old female was admitted to the hospital with complaints of acute onset of shortness of breath. This still frame shows:",
                 image: "q441.png",
                 options: ["Pleural effusion", "Pericardial effusion", "Normal heart"],
@@ -3025,7 +3240,17 @@
                 options: ["Libman Sach’s endocarditis", "Bacterial endocarditis", "Post inflammatory changes of the mitral valve", "Normal mitral valve"],
                 correct: 2
             },
+
+
+
+
+
+
+
+
+
             {
+                chapter:24,
                 question: "A two-chamber view (systolic frame) of the patient is shown in question 460. The arrow points to a defect in:",
                 image: "q461.png",
                 options: ["P1 scallop", "P2, A2 scallops", "P3 scallops", "A3 scallop"],
@@ -3145,7 +3370,15 @@
                 options: ["Calcified aortic and mitral valves", "An abscess involving mitral-aortic intervalvular fibrosa", "Normal valves", "Bioprosthetic valves"],
                 correct: 1
             },
+
+
+
+
+
+
+
             {
+                chapter:25,
                 question: "This still-frame image of a four-chamber view shows:",
                 image: "q481.png",
                 options: ["Secundum atrial septal defect", "Primum atrial septal defect", "Sinus venosus atrial septal defect", "None of the above"],
@@ -3281,6 +3514,15 @@
 
             for (let i = startIndex; i < endIndex; i++) {
                 const question = questions[i];
+                
+                // Add chapter header if this question has a chapter property
+                if (question.chapter) {
+                    const chapterHeader = document.createElement('div');
+                    chapterHeader.className = 'chapter-header';
+                    chapterHeader.innerHTML = `📚 Chapter ${question.chapter}`;
+                    container.appendChild(chapterHeader);
+                }
+
                 const questionCard = document.createElement('div');
                 questionCard.className = 'question-card';
 
@@ -3293,7 +3535,7 @@
                          onerror="this.style.display='none';">
                 </div>
             ` : ''}
-            <ul class=options>
+            <ul class="options">
                 ${question.options.map((option, index) => `
                     <li class="option">
                         <input type="radio" id="q${i}_${index}" name="q${i}" value="${index}" 
@@ -3311,6 +3553,7 @@
             updateNavigation();
             updateProgressBar();
         }
+
         function saveAnswer(questionIndex, answerIndex) {
             userAnswers[questionIndex] = answerIndex;
         }
@@ -3374,6 +3617,7 @@
             document.getElementById('incorrectAnswers').textContent = incorrect;
             document.getElementById('scorePercent').textContent = percentage + '%';
             document.getElementById('finalScore').textContent = `${correct}/${questions.length}`;
+            document.getElementById('totalQuestionsResult').textContent = questions.length;
         }
 
         function showResults() {
@@ -3395,6 +3639,14 @@
             questions.forEach((question, index) => {
                 const userAnswer = userAnswers[index];
                 const isCorrect = userAnswer === question.correct;
+
+                // Add chapter header if this question has a chapter property
+                if (question.chapter) {
+                    const chapterHeader = document.createElement('div');
+                    chapterHeader.className = 'chapter-header';
+                    chapterHeader.innerHTML = `📚 Chapter ${question.chapter}`;
+                    container.appendChild(chapterHeader);
+                }
 
                 const reviewCard = document.createElement('div');
                 reviewCard.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
@@ -3451,5 +3703,4 @@
         displayQuestions();
     </script>
 </body>
-
 </html>

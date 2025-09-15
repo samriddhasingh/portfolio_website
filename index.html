@@ -6391,20 +6391,23 @@
 
                 const questionNumber = questions.indexOf(question) + 1;
 
-                questionCard.innerHTML = `
-                    <div class="question-number">Question ${questionNumber}</div>
-                    <div class="question-text">${question.question}</div>
-                    <ul class="options">
-                        ${question.options.map((option, index) => `
-                            <li class="option">
-                                <input type="radio" id="q${i}_${index}" name="q${i}" value="${index}" 
-                                       ${userAnswers[i] == index ? 'checked' : ''} 
-                                       onchange="saveAnswer(${i}, ${index})">
-                                <label for="q${i}_${index}">${option}</label>
-                            </li>
-                        `).join('')}
-                    </ul>
-                `;
+                    questionCard.innerHTML = `
+                        <div class="question-number">Question ${questionNumber}</div>
+                        <div class="question-text">${question.question}</div>
+                        ${question.image ? `<div style="text-align:center; margin:20px 0;">
+                            <img src="${question.image}" alt="Question Image" style="max-width:100%; border-radius:10px;"/>
+                        </div>` : ''}
+                        <ul class="options">
+                            ${question.options.map((option, index) => `
+                                <li class="option">
+                                    <input type="radio" id="q${i}_${index}" name="q${i}" value="${index}" 
+                                        ${userAnswers[i] == index ? 'checked' : ''} 
+                                        onchange="saveAnswer(${i}, ${index})">
+                                    <label for="q${i}_${index}">${option}</label>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    `;
 
                 container.appendChild(questionCard);
             }
@@ -6578,3 +6581,4 @@
     </script>
 </body>
 </html>
+
